@@ -7,3 +7,13 @@ class consume(models.Model):
     consume_price = models.CharField(max_length=50,blank=True,null=True)
     consume_category = models.CharField(max_length=50,blank=True,null=True)
     consume_date = models.DateField(blank=True,null=True)
+
+class eating(models.Model):
+    consume_item = models.CharField(max_length=50,blank=True,null=True)
+    consume_price = models.CharField(max_length=50,blank=True,null=True)
+    consume_date = models.DateField(blank=True,null=True)
+
+class drinking(models.Model):
+    consume_item = models.CharField(max_length=50,blank=True,null=True)
+    consume_price = models.CharField(max_length=50,blank=True,null=True)
+    consume_date = models.DateField(blank=True,null=True)
